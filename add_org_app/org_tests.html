@@ -24,8 +24,8 @@
         </h1>
         <img id='keyboard_icon' src='keybd_closed.png'>
         <h2 class='stats'>
-            62 statements
-            <span class='run hide_run shortkey_r' onclick='coverage.toggle_lines(this, "run")'>62 run</span>
+            74 statements
+            <span class='run hide_run shortkey_r' onclick='coverage.toggle_lines(this, "run")'>74 run</span>
             <span class='mis shortkey_m' onclick='coverage.toggle_lines(this, "mis")'>0 missing</span>
             <span class='exc shortkey_x' onclick='coverage.toggle_lines(this, "exc")'>0 excluded</span>
             
@@ -189,14 +189,40 @@
 <p id='n125' class='pln'><a href='#n125'>125</a></p>
 <p id='n126' class='pln'><a href='#n126'>126</a></p>
 <p id='n127' class='pln'><a href='#n127'>127</a></p>
-<p id='n128' class='stm run hide_run'><a href='#n128'>128</a></p>
-<p id='n129' class='pln'><a href='#n129'>129</a></p>
-<p id='n130' class='pln'><a href='#n130'>130</a></p>
+<p id='n128' class='pln'><a href='#n128'>128</a></p>
+<p id='n129' class='stm run hide_run'><a href='#n129'>129</a></p>
+<p id='n130' class='stm run hide_run'><a href='#n130'>130</a></p>
 <p id='n131' class='stm run hide_run'><a href='#n131'>131</a></p>
 <p id='n132' class='stm run hide_run'><a href='#n132'>132</a></p>
 <p id='n133' class='stm run hide_run'><a href='#n133'>133</a></p>
-<p id='n134' class='stm run hide_run'><a href='#n134'>134</a></p>
-<p id='n135' class='stm run hide_run'><a href='#n135'>135</a></p>
+<p id='n134' class='pln'><a href='#n134'>134</a></p>
+<p id='n135' class='pln'><a href='#n135'>135</a></p>
+<p id='n136' class='pln'><a href='#n136'>136</a></p>
+<p id='n137' class='pln'><a href='#n137'>137</a></p>
+<p id='n138' class='pln'><a href='#n138'>138</a></p>
+<p id='n139' class='stm run hide_run'><a href='#n139'>139</a></p>
+<p id='n140' class='stm run hide_run'><a href='#n140'>140</a></p>
+<p id='n141' class='stm run hide_run'><a href='#n141'>141</a></p>
+<p id='n142' class='pln'><a href='#n142'>142</a></p>
+<p id='n143' class='pln'><a href='#n143'>143</a></p>
+<p id='n144' class='pln'><a href='#n144'>144</a></p>
+<p id='n145' class='pln'><a href='#n145'>145</a></p>
+<p id='n146' class='stm run hide_run'><a href='#n146'>146</a></p>
+<p id='n147' class='pln'><a href='#n147'>147</a></p>
+<p id='n148' class='stm run hide_run'><a href='#n148'>148</a></p>
+<p id='n149' class='stm run hide_run'><a href='#n149'>149</a></p>
+<p id='n150' class='stm run hide_run'><a href='#n150'>150</a></p>
+<p id='n151' class='pln'><a href='#n151'>151</a></p>
+<p id='n152' class='pln'><a href='#n152'>152</a></p>
+<p id='n153' class='pln'><a href='#n153'>153</a></p>
+<p id='n154' class='pln'><a href='#n154'>154</a></p>
+<p id='n155' class='stm run hide_run'><a href='#n155'>155</a></p>
+<p id='n156' class='pln'><a href='#n156'>156</a></p>
+<p id='n157' class='stm run hide_run'><a href='#n157'>157</a></p>
+<p id='n158' class='stm run hide_run'><a href='#n158'>158</a></p>
+<p id='n159' class='stm run hide_run'><a href='#n159'>159</a></p>
+<p id='n160' class='stm run hide_run'><a href='#n160'>160</a></p>
+<p id='n161' class='stm run hide_run'><a href='#n161'>161</a></p>
                 
             </td>
             <td class='text' valign='top'>
@@ -320,21 +346,47 @@
 <p id='t118' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>)</span><span class='strut'>&nbsp;</span></p>
 <p id='t119' class='pln'><span class='strut'>&nbsp;</span></p>
 <p id='t120' class='stm run hide_run'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>test_validation_fail1</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
-<p id='t121' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>django</span><span class='op'>.</span><span class='nam'>core</span><span class='op'>.</span><span class='nam'>exceptions</span> <span class='key'>import</span> <span class='nam'>ValidationError</span><span class='strut'>&nbsp;</span></p>
-<p id='t122' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>with</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>assertRaises</span><span class='op'>(</span><span class='nam'>ValidationError</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p id='t121' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>django</span><span class='op'>.</span><span class='nam'>db</span> <span class='key'>import</span> <span class='nam'>IntegrityError</span><span class='strut'>&nbsp;</span></p>
+<p id='t122' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>with</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>assertRaises</span><span class='op'>(</span><span class='nam'>IntegrityError</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
 <p id='t123' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>d</span> <span class='op'>=</span> <span class='nam'>Department</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>create</span><span class='op'>(</span><span class='strut'>&nbsp;</span></p>
 <p id='t124' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>university</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
 <p id='t125' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>faculty</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
 <p id='t126' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>name</span><span class='op'>=</span><span class='str'>u&#39;&#1050;&#1072;&#1092;&#1077;&#1076;&#1088;&#1072; &#1084;&#1086;&#1076;&#1085;&#1086;&#1075;&#1086; &#1074;&#1080;&#1088;&#1086;&#1082;&#1091;&#39;</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
 <p id='t127' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>)</span><span class='strut'>&nbsp;</span></p>
-<p id='t128' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>d</span><span class='op'>.</span><span class='nam'>clean</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
-<p id='t129' class='pln'><span class='strut'>&nbsp;</span></p>
-<p id='t130' class='pln'><span class='strut'>&nbsp;</span></p>
-<p id='t131' class='stm run hide_run'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>tearDown</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
-<p id='t132' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>u</span> <span class='op'>=</span> <span class='nam'>University</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>get</span><span class='op'>(</span><span class='nam'>abbr</span><span class='op'>=</span><span class='str'>u&#39;&#1050;&#1053;&#1059;&#1050;&#1110;&#1052;&#39;</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
-<p id='t133' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>f</span> <span class='op'>=</span> <span class='nam'>Faculty</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>get</span><span class='op'>(</span><span class='nam'>abbr</span><span class='op'>=</span><span class='str'>u&#39;&#1060;&#1030;&#1052;&#39;</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
-<p id='t134' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>f</span><span class='op'>.</span><span class='nam'>delete</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
-<p id='t135' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>u</span><span class='op'>.</span><span class='nam'>delete</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t128' class='pln'><span class='strut'>&nbsp;</span></p>
+<p id='t129' class='stm run hide_run'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>test_validation_fail2</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p id='t130' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>from</span> <span class='nam'>django</span><span class='op'>.</span><span class='nam'>db</span> <span class='key'>import</span> <span class='nam'>IntegrityError</span><span class='strut'>&nbsp;</span></p>
+<p id='t131' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>with</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>assertRaises</span><span class='op'>(</span><span class='nam'>IntegrityError</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p id='t132' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>f</span> <span class='op'>=</span> <span class='nam'>Faculty</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>get</span><span class='op'>(</span><span class='nam'>abbr</span><span class='op'>=</span><span class='str'>u&#39;&#1060;&#1030;&#1052;&#39;</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t133' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>d</span> <span class='op'>=</span> <span class='nam'>Department</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>create</span><span class='op'>(</span><span class='strut'>&nbsp;</span></p>
+<p id='t134' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>university</span><span class='op'>=</span><span class='nam'>f</span><span class='op'>.</span><span class='nam'>university</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p id='t135' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>faculty</span><span class='op'>=</span><span class='nam'>f</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p id='t136' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>name</span><span class='op'>=</span><span class='str'>u&#39;&#1050;&#1072;&#1092;&#1077;&#1076;&#1088;&#1072; &#1084;&#1086;&#1076;&#1085;&#1086;&#1075;&#1086; &#1074;&#1080;&#1088;&#1086;&#1082;&#1091;&#39;</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p id='t137' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t138' class='pln'><span class='strut'>&nbsp;</span></p>
+<p id='t139' class='stm run hide_run'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>test_validation_success1</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p id='t140' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>f</span> <span class='op'>=</span> <span class='nam'>Faculty</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>get</span><span class='op'>(</span><span class='nam'>abbr</span><span class='op'>=</span><span class='str'>u&#39;&#1060;&#1030;&#1052;&#39;</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t141' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>d</span> <span class='op'>=</span> <span class='nam'>Department</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>create</span><span class='op'>(</span><span class='strut'>&nbsp;</span></p>
+<p id='t142' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>university</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p id='t143' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>faculty</span><span class='op'>=</span><span class='nam'>f</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p id='t144' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>name</span><span class='op'>=</span><span class='str'>u&#39;&#1050;&#1072;&#1092;&#1077;&#1076;&#1088;&#1072; &#1084;&#1086;&#1076;&#1085;&#1086;&#1075;&#1086; &#1074;&#1080;&#1088;&#1086;&#1082;&#1091;&#39;</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p id='t145' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t146' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>d</span><span class='op'>.</span><span class='nam'>delete</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t147' class='pln'><span class='strut'>&nbsp;</span></p>
+<p id='t148' class='stm run hide_run'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>test_validation_success2</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p id='t149' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>u</span> <span class='op'>=</span> <span class='nam'>University</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>get</span><span class='op'>(</span><span class='nam'>abbr</span><span class='op'>=</span><span class='str'>u&#39;&#1050;&#1053;&#1059;&#1050;&#1110;&#1052;&#39;</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t150' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>d</span> <span class='op'>=</span> <span class='nam'>Department</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>create</span><span class='op'>(</span><span class='strut'>&nbsp;</span></p>
+<p id='t151' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>university</span><span class='op'>=</span><span class='nam'>u</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p id='t152' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>faculty</span><span class='op'>=</span><span class='nam'>None</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p id='t153' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>name</span><span class='op'>=</span><span class='str'>u&#39;&#1050;&#1072;&#1092;&#1077;&#1076;&#1088;&#1072; &#1084;&#1086;&#1076;&#1085;&#1086;&#1075;&#1086; &#1074;&#1080;&#1088;&#1086;&#1082;&#1091;&#39;</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
+<p id='t154' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t155' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>d</span><span class='op'>.</span><span class='nam'>delete</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t156' class='pln'><span class='strut'>&nbsp;</span></p>
+<p id='t157' class='stm run hide_run'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>tearDown</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p id='t158' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>u</span> <span class='op'>=</span> <span class='nam'>University</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>get</span><span class='op'>(</span><span class='nam'>abbr</span><span class='op'>=</span><span class='str'>u&#39;&#1050;&#1053;&#1059;&#1050;&#1110;&#1052;&#39;</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t159' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>f</span> <span class='op'>=</span> <span class='nam'>Faculty</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>get</span><span class='op'>(</span><span class='nam'>abbr</span><span class='op'>=</span><span class='str'>u&#39;&#1060;&#1030;&#1052;&#39;</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t160' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>f</span><span class='op'>.</span><span class='nam'>delete</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t161' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>u</span><span class='op'>.</span><span class='nam'>delete</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
                 
             </td>
         </tr>
